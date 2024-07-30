@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Modal.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Logos/StoreLogo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="navigateTo('MainPage.html')">Home</a></li>
+                    <li><a href="#" onclick="showModal('offersModal')">Offers</a></li>
+                    <li><a href="#" onclick="scrollToSection('reviews')">Reviews</a></li>
+                    <li><a href="#" onclick="scrollToSection('about-us')">About Us</a></li>
+                    <li><a href="#" onclick="showModal('supportModal')">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-buttons">
+        <button onclick="location.href='TripsPage.html'">Trips</button>
+        <button class="current-page">Store</button>
+        <button onclick="location.href='TrainingPage.html'">Trainings</button>
+    </section>
+
+    <main>
+        <section class="banner">
+            <div class="banner-carousel-container">
+                <div class="banner-carousel">
+                    <div class="banner-carousel-inner">
+                        <div class="banner-carousel-item active">
+                            <img src="Banners/MainPageBanner1.svg" alt="Circle 1">
+                        </div>
+                        <div class="banner-carousel-item">
+                            <img src="Banners/MainPageBanner2.svg" alt="Circle 2">
+                        </div>
+                        <div class="banner-carousel-item">
+                            <img src="Banners/MainPageBanner1.svg" alt="Circle 3">
+                        </div>
+                        <div class="banner-carousel-item">
+                            <img src="Banners/MainPageBanner2.svg" alt="Circle 4">
+                        </div>
+                    </div>
+                    <div class="banner-carousel-indicators">
+                        <span class="banner-indicator active" onclick="goToBannerSlide(0)"></span>
+                        <span class="banner-indicator" onclick="goToBannerSlide(1)"></span>
+                        <span class="banner-indicator" onclick="goToBannerSlide(2)"></span>
+                        <span class="banner-indicator" onclick="goToBannerSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-picked">
+            <h2 class="heading-style">Souvenirs</h2>
+            <div class="souvenirs">
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="souvenirs-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-picked">
+            <h2 class="heading-style">Delicacies</h2>
+            <div class="delicacies">
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="delicacies-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <h2 class="heading-style">Reviews and Comments</h2>
+            <div class="review-container">
+                <!-- Reviews will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="heading-style">About Us</h2>
+            <div class="about-us" id="about-us">
+                <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus.</p>
+            </div>
+        </section>
+
+        <div class="modal" id="offersModal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('offersModal')">&times;</span>
+                <h2>Offers</h2>
+                <p>Details about offers...</p>
+            </div>
+        </div>
+
+        <div class="modal" id="supportModal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('supportModal')">&times;</span>
+                <h2>Support</h2>
+                <p>Details about support...</p>
+            </div>
+        </div>
+    </main>
+    <script src="javascripts/script.js"></script>
+    <script src="javascripts/Modal.js"></script>
+</body>
+</html>

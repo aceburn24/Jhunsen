@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Logos/JhunsenLogo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#trainings">Trainings</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#" onclick="showModal('aboutUsModal')">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-carousel-container">
+                <div class="banner-carousel">
+                    <div class="banner-carousel-inner">
+                        <div class="banner-carousel-item active">
+                            <img src="Banners/MainPageBanner1.svg" alt="Banner 1">
+                        </div>
+                        <div class="banner-carousel-item">
+                            <img src="Banners/MainPageBanner2.svg" alt="Banner 2">
+                        </div>
+                        <div class="banner-carousel-item">
+                            <img src="Banners/MainPageBanner1.svg" alt="Banner 3">
+                        </div>
+                        <div class="banner-carousel-item">
+                            <img src="Banners/MainPageBanner2.svg" alt="Banner 4">
+                        </div>
+                    </div>
+                    <div class="banner-carousel-controls">
+                        <span class="banner-control prev" onclick="prevBannerSlide()">&#10094;</span>
+                        <span class="banner-control next" onclick="nextBannerSlide()">&#10095;</span>
+                    </div>
+                    <div class="banner-carousel-indicators">
+                        <span class="banner-indicator active" onclick="goToBannerSlide(0)"></span>
+                        <span class="banner-indicator" onclick="goToBannerSlide(1)"></span>
+                        <span class="banner-indicator" onclick="goToBannerSlide(2)"></span>
+                        <span class="banner-indicator" onclick="goToBannerSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-picked" id="services">
+            <h2 class="heading-style">Top Picked Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Cruises">
+                    <p>Cruises</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Car Rentals">
+                    <p>Car Rentals</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-picked" id="trainings">
+            <h2 class="heading-style">Top Picked Trainings</h2>
+            <div class="services">
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Non Global Distribution System Training">
+                    <p>Non Global Distribution System Training</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Global Distribution System Training">
+                    <p>Global Distribution System Training</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Amadeus">
+                    <p>Amadeus</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Galileo">
+                    <p>Galileo</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Pictures/1.jpg" alt="Sabre">
+                    <p>Sabre</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-picked" id="merchandises">
+            <h2 class="heading-style">Top Picked Merchandises</h2>
+            <div class="merchandises">
+                <div class="merchandise-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="merchandise-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="merchandise-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="merchandise-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+                <div class="merchandise-item">
+                    <img src="Pictures/1.jpg" alt="Travel Insurance">
+                    <p>Travel Insurance</p>
+                </div>
+                <div class="merchandise-item">
+                    <img src="Pictures/1.jpg" alt="Travel Accessories">
+                    <p>Travel Accessories</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-picked" id="destinations">
+            <h2 class="heading-style">Most Popular Destinations</h2>
+            <div class="destinations">
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Tour Package">
+                    <p>Tour Package</p>
+                </div>
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Group Booking">
+                    <p>Group Booking</p>
+                </div>
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Flights">
+                    <p>Flights</p>
+                </div>
+                <div class="destinations-item">
+                    <img src="Pictures/1.jpg" alt="Holidays">
+                    <p>Holidays</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <h2 class="heading-style">Reviews and Comments</h2>
+            <div class="review-container">
+                <!-- Reviews will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading-style">Contact Us</h2>
+            <div class="contact-card">
+                <div class="contact-details">
+                    <p class="contact-us-text">Feel free to reach out to us for any inquiries or support. We're here to help!</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> <strong>Phone: </strong>  09693664732, 09930790068</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email: </strong> <a href="mailto:jhunsenhouse@gmail.com"> jhunsenhouse@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61558329520389" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook"></i> JHUNSEN TRIP & TRAINING SERVICES</a>
+                        <a href="https://www.facebook.com/profile.php?id=61558388586903" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook"></i> JHUNSEN HOUSE</a>
+                        <a href="https://www.tiktok.com/@jhunsen6" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-tiktok"></i> JHUNSEN TRIP & TRAINING SERVICES</a>
+                        <a href="https://www.instagram.com/jhunsenhouse" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-instagram"></i> JHUNSEN TRIP & TRAINING SERVICES</a>
+                        <a href="https://www.facebook.com/hsauyen" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook"></i> JHUNSEN HOUSE</a>
+                        <a href="https://www.tiktok.com/@jhunsenhouse" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-tiktok"></i> JHUNSEN HOUSE</a>
+                    </div>
+                </div>
+                <p class="note">Note: Our social media handles are regularly updated. Follow us to stay connected and informed about our latest offers and updates!</p>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+
+        <div class="modal" id="aboutUsModal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('aboutUsModal')">&times;</span>
+                <h2>About Us</h2>
+                <p>With over 17 years of experience in the travel industry, we offer a wealth of knowledge and expertise. Our background spans various roles, including call centers, travel agencies in Saudi Arabia, Qatar, and Bahrain, as well as B2B and Online Travel Agency platforms. We are proficient in major systems like Sabre, Amadeus, and Galileo, which enhance our training capabilities. Our recent acquisition of a Six Sigma White Belt further demonstrates our dedication to continuous improvement and excellence in business processes. We are confident that our experience and skills will add value to your team and drive success in your training endeavors.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="javascripts/script.js"></script>
+    <script src="javascripts/Modal.js"></script>
+</body>
+</html>
