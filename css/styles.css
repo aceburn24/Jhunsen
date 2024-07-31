@@ -9,6 +9,7 @@ body {
     color: #333;
     text-align: center;
 }
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,8 @@ header {
 }
 
 .logo img {
-    width: 120px; 
+    width: 120px;
+    transition: width 0.3s ease;
 }
 
 nav ul {
@@ -322,4 +324,64 @@ main {
     font-size: 14px;
     color: #555;
     font-style: italic;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 100px; /* Smaller logo for tablets */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .heading-style {
+        font-size: 20px;
+    }
+
+    .service-item, .merchandise-item, .destinations-item {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+
+    .review-container {
+        padding: 10px 0;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .logo img {
+        width: 80px; /* Even smaller logo for mobile phones */
+    }
+
+    .header-container {
+        padding: 10px;
+    }
+
+    .heading-style {
+        font-size: 18px;
+    }
+
+    .service-item, .merchandise-item, .destinations-item {
+        width: 100%; /* Single item per row */
+        margin-bottom: 10px;
+    }
+
+    .review-card {
+        width: calc(80% - 20px); /* Reduce width for smaller screens */
+    }
+
+    .banner-carousel-controls {
+        display: none; /* Hide controls on very small screens */
+    }
 }
